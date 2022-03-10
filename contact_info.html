@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Victoria Shouse Contact Info</h3>
+  <p>Phone: 2562939941</p>
+  <p>Email: vnonosj@gmail.com</p>
+  <!-- we can create a form here for people to send messages to me, but
+  here, we're only creating the structure of the form. We won't be able to do
+  anything with it yet, i.e. it won't function until we can learn to use
+  javascript to define the BEHAVIOR of the form -->
+  <!-- <form action="index.html"> -->
+  <form action="mailto:vnonosj@gmail.com" enctype="text/plain" method="post">
+    <!-- mailto ^^ will open default email client -->
+    <!-- action ^ takes you to that page when the form is submitted when user
+    hits 'enter' at the end of the form, or if they hit the Submit button-->
+    <label>Your Name:</label>
+    <input type="text" name="yourname">
+    <label>Your Email:</label>
+    <input type="email" name="youremail" value="">
+    <!-- see the MDN docs to see all the input options -->
+    <!-- forms are used for user login and signup, etc -->
+    <br>
+    <textarea name="yourcomment" rows="8" cols="80"></textarea>
+    <input type="submit">
+  </form>
+</body>
+</html>
